@@ -46,18 +46,18 @@ I can create **temp emails** for you. Send /new to **create new mail** !
 
 Send /domains to get list of Available Domains.
 
-**Developer** : @ImDenuwan | @szteambots 
+**Developer** : @@HOMIESAttendant | @HOMIESAttendant
 """
 
 
 start_button = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👥 Group", url="https://t.me/slbotzone"),
-                    InlineKeyboardButton("🗣 Channel", url="https://t.me/szteambots")
+                    InlineKeyboardButton("👥 Group", url="https://t.me/real_homies"),
+                    InlineKeyboardButton("🗣 Channel", url="https://t.me/homiesbotoffical")
                 ],
 		        [
-                    InlineKeyboardButton("➕Add to Group ➕", url=f"http://t.me/szFakeMailBot?startgroup=new"),
+                    InlineKeyboardButton("➕Add to Group ➕", url=f"http://t.me/HOMIESAttendantbot?startgroup=new"),
                 ]    
             ]
 )
@@ -72,8 +72,8 @@ async def start(_, message: Message):
 			text=f"""
 🚧 **Access Denied** {message.from_user.mention}
 You must,
-🔹[join Our Telegram Channel](https://t.me/szteambots).
-@szteambots
+🔹[join Our Telegram group](https://t.me/real_homies).
+@HOMIESAttendantbot
 """)
        return
     name = message.from_user.id
@@ -97,7 +97,7 @@ API3='https://www.1secmail.com/api/v1/?action=readMessage&login='
 #********************************************************************************
 
 create = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("SZ team bots 🇱🇰", url="https://t.me/szteambots")]])
+            [[InlineKeyboardButton("HOMIES bots 🇱🇰", url="https://t.me/real_homies")]])
 
 #********************************************************************************
 @app.on_message(filters.command("new"))
@@ -115,7 +115,7 @@ async def fakemailgen(_, message: Message):
 **📬Done,Your Email Address Created!**
 📧 **Email** : `{email}@{domain}`
 📨 **Mail BOX** : `empty`
-**Powered by** : @szteambots """,
+**Powered by** : @real_homies """,
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("♻️ Update Mail BOX ♻️", callback_data = f"mailbox |{email}|{domain}")]]))
     pi = await mes.pin(disable_notification=True, both_sides=True)
     await m.delete()
@@ -155,7 +155,7 @@ async def mail_box(_, query : CallbackQuery):
 **📬Done,Your Email Address Created!**
 📧 **Email** : `{smail}`
 📨 **Mail BOX** : ✅
-**Powered by** : @szteambots""",
+**Powered by** : @real_homies""",
 reply_markup = mbutton
 )   
         except bad_request_400.MessageNotModified as e:
