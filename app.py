@@ -46,7 +46,7 @@ I can create **temp emails** for you. Send /new to **create new mail** !
 
 Send /domains to get list of Available Domains.
 
-**Developer** : @@HOMIESAttendant | @HOMIESAttendant
+**Developer** : @@HOMIESAttendant | @homiesbotoffical
 """
 
 
